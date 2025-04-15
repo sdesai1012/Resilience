@@ -2,41 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sagar | Resilience Coach & Speaker</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
-      color: #0a1a2f; /* dark navy blue */
+      color: #1a2b4c; /* Dark navy */
       line-height: 1.6;
     }
 
-    header {
-      background: url('IMG_3587.JPEG') no-repeat center center;
-      background-size: cover;
+    .hero {
+      position: relative;
       height: 100vh;
-      color: #0a1a2f; /* dark navy blue */
+      background-image: url('your-image-url.jpg'); /* Replace with your actual image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start; /* move content to top */
-      padding: 100px 20px 40px;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: #1a2b4c;
     }
 
-    header h1 {
-      font-size: 3rem;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
       margin-bottom: 1rem;
+      color: #f1f1f1;
     }
 
-    header p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: #f1f1f1;
     }
 
     .cta-button {
@@ -47,6 +71,7 @@
       font-size: 1rem;
       border-radius: 8px;
       text-decoration: none;
+      font-weight: 600;
     }
 
     section {
@@ -84,11 +109,14 @@
 </head>
 <body>
 
-  <header>
-    <h1>Resilience is Built. Not Born.</h1>
-    <p>I help professionals and leaders build clarity, resilience, and inner strength through coaching, storytelling, and physical rituals.</p>
-    <a class="cta-button" href="#contact">Book a Free Discovery Call</a>
-  </header>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Resilience is Built. Not Born.</h1>
+      <p>I help professionals and leaders build clarity, resilience, and inner strength through coaching, storytelling, and physical rituals.</p>
+      <a class="cta-button" href="#contact">Book a Free Discovery Call</a>
+    </div>
+  </div>
 
   <section>
     <h2>Your Story</h2>
@@ -119,6 +147,5 @@
   <footer>
     <p>&copy; 2025 Sagar | Resilience Coach & Speaker</p>
   </footer>
-
 </body>
 </html>
