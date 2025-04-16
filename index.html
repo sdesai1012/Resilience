@@ -18,12 +18,12 @@
     html {
       height: 100%;
       font-family: 'Arial', sans-serif;
-      background-color: #fffaf3;
-      color: #3e2c1c;
+      background-color: #f4f4f4; /* Light gray background for subtle feel */
+      color: #3e2c1c; /* Dark navy for contrast */
     }
 
     .hero {
-      background-image: linear-gradient(rgba(62, 44, 28, 0.7), rgba(62, 44, 28, 0.7)), url('IMG_3587.JPEG');
+      background-image: linear-gradient(rgba(62, 44, 28, 0.7), rgba(62, 44, 28, 0.7)), url('background.jpg');
       height: 100vh;
       background-size: cover;
       background-position: center;
@@ -37,56 +37,70 @@
     }
 
     .hero h1 {
-      font-size: 4em;
-      font-weight: bold;
+      font-size: 3em;
       margin-bottom: 20px;
-      color: #fff;
     }
 
     .hero p {
-      font-size: 1.5em;
-      max-width: 900px;
-      margin: 0 auto 30px;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     section {
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
+      background-color: #fff; /* White background for sections */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       margin-bottom: 20px;
       font-size: 2.5em;
       color: #3e2c1c;
-      font-weight: bold;
-      text-align: center;
     }
 
     .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 35px;
-      font-size: 1.2em;
-      color: #fff;
-      background-color: #a97449;
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 1em;
+      color: white;
+      background-color: #a97449; /* Caramel color for the button */
       text-decoration: none;
-      border-radius: 8px;
-      transition: all 0.3s ease;
+      border-radius: 5px;
+      text-align: center;
     }
 
     .button:hover {
       background-color: #8a5c34;
-      transform: scale(1.05);
     }
 
     ul {
-      list-style: disc;
-      padding-left: 20px;
+      list-style: none;
+      padding: 0;
     }
 
-    ul li {
-      margin-bottom: 10px;
+    .topic-button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #3e2c1c; /* Dark navy blue */
+      color: #fffaf3;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .topic-button:hover {
+      background-color: #a97449; /* Hover effect for the button */
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px; /* Spacing between paragraphs */
     }
   </style>
 </head>
@@ -126,11 +140,11 @@
 
   <section id="topics">
     <h2>Topics I Speak About</h2>
-    <ul>
-      <li>Resilience</li>
-      <li>Self-Discovery</li>
-      <li>Overall Wellbeing</li>
-    </ul>
+    <div>
+      <button class="topic-button">Resilience</button>
+      <button class="topic-button">Self-Discovery</button>
+      <button class="topic-button">Overall Wellbeing</button>
+    </div>
   </section>
 
   <section id="contact">
