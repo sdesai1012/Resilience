@@ -17,153 +17,87 @@
     body,
     html {
       height: 100%;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f7f3e9;
+      font-family: 'Arial', sans-serif;
+      background-color: #fffaf3;
       color: #3e2c1c;
-      line-height: 1.6;
     }
 
-    /* Hero Section */
     .hero {
-      background-image: linear-gradient(rgba(62, 44, 28, 0.6), rgba(62, 44, 28, 0.6)), url('IMG_3587.JPEG');
+      background-image: linear-gradient(rgba(62, 44, 28, 0.7), rgba(62, 44, 28, 0.7)), url('background.jpg');
+      height: 100vh;
       background-size: cover;
       background-position: center;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      color: #fffaf3;
       padding: 0 20px;
-      color: #fff;
     }
 
     .hero h1 {
       font-size: 4em;
       font-weight: bold;
       margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      color: #fff;
     }
 
     .hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      max-width: 750px;
-      text-align: center;
+      font-size: 1.5em;
+      max-width: 900px;
+      margin: 0 auto 30px;
     }
 
-    .hero .button {
-      padding: 12px 30px;
-      font-size: 1.1em;
-      color: white;
-      background-color: #a97449;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      display: inline-block;
-    }
-
-    .hero .button:hover {
-      background-color: #8a5c34;
-      transform: translateY(-5px);
-    }
-
-    /* Section Styling */
     section {
-      padding: 80px 20px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-      text-align: center;
     }
 
     h2 {
+      margin-bottom: 20px;
       font-size: 2.5em;
       color: #3e2c1c;
-      margin-bottom: 20px;
       font-weight: bold;
+      text-align: center;
     }
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-      color: #5f4d3e;
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #a97449;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
 
-    /* Topics List */
+    .button:hover {
+      background-color: #8a5c34;
+      transform: scale(1.05);
+    }
+
     ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      padding: 0;
+      list-style: disc;
+      padding-left: 20px;
     }
 
     ul li {
-      font-size: 1.4em;
-      color: #a97449;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    ul li:hover {
-      color: #3e2c1c;
-    }
-
-    /* Contact Button */
-    .contact-button {
-      display: inline-block;
-      padding: 12px 30px;
-      font-size: 1.1em;
-      color: white;
-      background-color: #a97449;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .contact-button:hover {
-      background-color: #8a5c34;
-      transform: translateY(-5px);
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 3em;
-      }
-
-      .hero p {
-        font-size: 1em;
-      }
-
-      section {
-        padding: 50px 20px;
-      }
-
-      h2 {
-        font-size: 2em;
-      }
-
-      .button, .contact-button {
-        padding: 10px 20px;
-        font-size: 1em;
-      }
+      margin-bottom: 10px;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Hero Section -->
   <div class="hero">
     <h1>Build Resilience. Live with Intention.</h1>
     <p>I help people navigate life transitions with resilience and clarity—through purpose, movement, and mindset.</p>
     <a href="#contact" class="button">Book a Discovery Call</a>
   </div>
 
-  <!-- My Journey Section -->
   <section id="journey">
     <h2>My Journey</h2>
     <p>
@@ -180,7 +114,6 @@
     </p>
   </section>
 
-  <!-- Caramel Viking Story -->
   <section id="caramelviking">
     <h2>Why the name Caramel Viking?</h2>
     <p>
@@ -191,7 +124,6 @@
     </p>
   </section>
 
-  <!-- Topics Section -->
   <section id="topics">
     <h2>Topics I Speak About</h2>
     <ul>
@@ -201,13 +133,11 @@
     </ul>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Let's Connect</h2>
     <p>If you're looking for a speaker, coach, or collaborator—I'd love to hear from you.</p>
-    <a href="mailto:sagardesai1012@gmail.com" class="contact-button">Book a Discovery Call</a>
+    <a href="mailto:sagardesai1012@gmail.com" class="button">Book a Discovery Call</a>
   </section>
-
 </body>
 
 </html>
