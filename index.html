@@ -1,192 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sagar | Resilience Coach & Speaker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <title>Caramel Viking | Resilience</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
-    header {
-      background: url('IMG_3587.JPEG') no-repeat center center/cover;
-      color: white;
-      padding: 120px 20px;
-      text-align: center;
-      position: relative;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
+
+    body,
+    html {
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
+      font-family: Arial, sans-serif;
+      background-color: #fffaf3;
+      color: #3e2c1c;
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      z-index: 2;
-      position: relative;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      z-index: 2;
-      position: relative;
-    }
-    .cta-button {
-      background-color: #ff8c42;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      z-index: 2;
-      position: relative;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
+
+    .hero {
+      background-image: linear-gradient(rgba(62, 44, 28, 0.7), rgba(62, 44, 28, 0.7)), url('background.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fffaf3;
       padding: 0 20px;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
     }
-    .offer {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 30px;
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 800px;
     }
-    .testimonial {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 30px;
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #1a1a1a;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #3e2c1c;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1em;
       color: white;
-    }
-    footer a {
-      color: #ff8c42;
+      background-color: #a97449;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 5px;
     }
-    footer .social-icon {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+
+    .button:hover {
+      background-color: #8a5c34;
     }
-    footer .social-icon:hover {
-      color: #ff8c42;
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
     }
-    @media (max-width: 768px) {
-      header {
-        padding: 50px 20px;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      section h2 {
-        font-size: 1.5rem;
-      }
-      .cta-button {
-        padding: 10px 20px;
-      }
-      .offer {
-        padding: 15px;
-      }
-      footer {
-        font-size: 0.9rem;
-      }
+
+    ul li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Resilience is Built. Not Born.</h1>
-    <p>I help professionals and leaders build clarity, resilience, and inner strength through coaching, storytelling, and physical rituals.</p>
-    <a class="cta-button" href="#contact">Book a Free Discovery Call</a>
-  </header>
+  <div class="hero">
+    <h1>Build Resilience. Live with Intention.</h1>
+    <p>I help people navigate life transitions with resilience and clarity—through purpose, movement, and mindset.</p>
+    <a href="#contact" class="button">Book a Discovery Call</a>
+  </div>
 
-  <section>
+  <section id="journey">
     <h2>My Journey</h2>
-    <p>I'm passionate about inspiring others to live purpose-driven lives. I grew up in India before my family moved to the U.S. when I was a teenager, and ever since, my journey has been about adapting to new environments and embracing growth.</p>
-    <p>With over 12 years of experience as an auditor across the U.S., Ireland, and Sweden, I’ve come to understand the realities and demands of high-pressure environments.</p>
-    <p>A decade ago, I found myself physically and mentally out of shape—disconnected from who I really was. That discomfort sparked a personal transformation. I began the process of getting back in touch with my values and started building a life that truly aligns with them. My path has taken me across continents—from moving to new countries and pushing myself in endurance races to exploring mountains as a way to reconnect with myself.</p>
-    <p>Now, I’m in Thailand, immersing myself in Muay Thai training—a continuation of my journey of self-discovery through movement, discipline, and intentional living.</p>
+    <p>
+      I'm passionate about inspiring others to live purpose-driven lives. I grew up in India before my family moved to the U.S. when I was a teenager, and ever since, my journey has been about adapting to new environments and embracing growth.
+    </p>
+    <p>
+      With over 12 years of experience as an auditor across the U.S., Ireland, and Sweden, I’ve come to understand the realities and demands of high-pressure environments.
+    </p>
+    <p>
+      A decade ago, I found myself physically and mentally out of shape—disconnected from who I really was. That discomfort sparked a personal transformation. I began the process of getting back in touch with my values and started building a life that truly aligns with them. My path has taken me across continents—from moving to new countries and pushing myself in endurance races to exploring mountains as a way to reconnect with myself.
+    </p>
+    <p>
+      Now, I’m in Thailand, immersing myself in Muay Thai training—a continuation of my journey of self-discovery through movement, discipline, and intentional living.
+    </p>
   </section>
 
-  <section>
-    <h2>Work With Me</h2>
-    <div class="offer">
-      <h3>1-on-1 Coaching</h3>
-      <p>For high performers seeking clarity, resilience, and aligned goals.<br/> A 3-month immersive journey. Weekly sessions. Personalized rituals and practices.</p>
-    </div>
-    <div class="offer">
-      <h3>Corporate Workshops / Speaking</h3>
-      <p>Topics: Resilience, Self-Discovery, Overall Wellbeing.<br/> Based on my signature “Well-being Triangle”: Self-Discovery, Growth, and Contribution.</p>
-    </div>
+  <section id="caramelviking">
+    <h2>Why the name Caramel Viking?</h2>
+    <p>
+      Caramel Viking represents the fusion of strength and sensitivity—a balance of fire and calm. The name was born unexpectedly while I was taking a cold plunge in Åre, Sweden, when someone shouted, “Caramel Viking!” and it stuck.
+    </p>
+    <p>
+      “Caramel” reflects my Indian roots, while “Viking” symbolizes the inner resilience I forged during my time in Sweden. It’s a unique blend of warmth and grit—about embracing life’s challenges with courage and determination while staying grounded in who you truly are.
+    </p>
   </section>
 
-  <section id="testimonials">
-    <h2>What Clients Say</h2>
-    <div class="testimonial">
-      <p>"Sagar helped me rediscover my purpose and build resilience in ways I never imagined. His coaching was life-changing!"</p>
-      <p><strong>– John D., CEO</strong></p>
-    </div>
-    <div class="testimonial">
-      <p>"Through Sagar’s workshops, I learned how to manage stress and stay focused, even in high-pressure situations."</p>
-      <p><strong>– Sarah L., Executive Director</strong></p>
-    </div>
+  <section id="topics">
+    <h2>Topics I Speak About</h2>
+    <ul>
+      <li>Resilience</li>
+      <li>Self-Discovery</li>
+      <li>Overall Wellbeing</li>
+    </ul>
   </section>
 
   <section id="contact">
-    <h2>Let’s Connect</h2>
-    <p>Ready to build your resilient path? Book a free 20-minute call to explore if we’re a fit.</p>
-    <a class="cta-button" href="mailto:sdesai1012@gmail.com">Book a Call</a>
-    <p style="margin-top: 20px;">Or invite me to speak at your next event: <a href="mailto:sdesai1012@gmail.com">sdesai1012@gmail.com</a></p>
+    <h2>Let's Connect</h2>
+    <p>If you're looking for a speaker, coach, or collaborator—I'd love to hear from you.</p>
+    <a href="mailto:sagardesai1012@gmail.com" class="button">Book a Discovery Call</a>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Sagar | Resilience Coach & Speaker</p>
-    <div>
-      <a href="https://www.linkedin.com/in/sagar" target="_blank" class="social-icon">LinkedIn</a>
-      <a href="https://twitter.com/sagar" target="_blank" class="social-icon">Twitter</a>
-      <a href="https://www.instagram.com/sagar" target="_blank" class="social-icon">Instagram</a>
-    </div>
-  </footer>
-  
-  <script>
-    // Smooth scrolling for anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
+
 </html>
