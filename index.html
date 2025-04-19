@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caramel Viking | Resilience</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -17,13 +17,13 @@
     body,
     html {
       height: 100%;
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4; /* Light gray background for subtle feel */
-      color: #3e2c1c; /* Dark navy for contrast */
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #0a1f44; /* Navy blue */
     }
 
     .hero {
-      background-image: linear-gradient(rgba(62, 44, 28, 0.7), rgba(62, 44, 28, 0.7)), url('IMG_3587.JPEG');
+      background-image: linear-gradient(rgba(10, 31, 68, 0.7), rgba(10, 31, 68, 0.7)), url('IMG_3587.JPEG');
       height: 100vh;
       background-size: cover;
       background-position: center;
@@ -32,7 +32,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #fffaf3;
+      color: #ffffff;
       padding: 0 20px;
     }
 
@@ -51,15 +51,12 @@
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-      background-color: #fff; /* White background for sections */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       margin-bottom: 20px;
       font-size: 2.5em;
-      color: #3e2c1c;
+      color: #0a1f44;
     }
 
     .button {
@@ -68,39 +65,47 @@
       padding: 12px 25px;
       font-size: 1em;
       color: white;
-      background-color: #a97449; /* Caramel color for the button */
+      background-color: #0a1f44; /* Navy */
       text-decoration: none;
       border-radius: 5px;
       text-align: center;
     }
 
     .button:hover {
-      background-color: #8a5c34;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .topic-button {
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #3e2c1c; /* Dark navy blue */
-      color: #fffaf3;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .topic-button:hover {
-      background-color: #a97449; /* Hover effect for the button */
+      background-color: #082041;
     }
 
     p {
       line-height: 1.6;
-      margin-bottom: 20px; /* Spacing between paragraphs */
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .topic-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .topic-tag {
+      background-color: #0a1f44;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 1em;
     }
   </style>
 </head>
@@ -126,6 +131,11 @@
     <p>
       Now, I’m in Thailand, immersing myself in Muay Thai training—a continuation of my journey of self-discovery through movement, discipline, and intentional living.
     </p>
+
+    <div class="gallery">
+      <img src="IMG_2787.JPEG" alt="Adventure Photo 1">
+      <img src="IMG_3400.JPEG" alt="Adventure Photo 2">
+    </div>
   </section>
 
   <section id="caramelviking">
@@ -140,10 +150,10 @@
 
   <section id="topics">
     <h2>Topics I Speak About</h2>
-    <div>
-      <button class="topic-button">Resilience</button>
-      <button class="topic-button">Self-Discovery</button>
-      <button class="topic-button">Overall Wellbeing</button>
+    <div class="topic-tags">
+      <span class="topic-tag">Resilience</span>
+      <span class="topic-tag">Self-Discovery</span>
+      <span class="topic-tag">Overall Wellbeing</span>
     </div>
   </section>
 
@@ -155,3 +165,4 @@
 </body>
 
 </html>
+
