@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caramel Viking | Resilience</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0a1f44;
-      --accent-color: #0a1f44;
-    }
-
-    body.dark-mode {
-      --bg-color: #0a1f44;
-      --text-color: #ffffff;
-      --accent-color: #ffffff;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -29,9 +18,8 @@
     html {
       height: 100%;
       font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: #ffffff;
+      color: #0a1f44;
     }
 
     .hero {
@@ -46,7 +34,6 @@
       text-align: center;
       color: #ffffff;
       padding: 0 20px;
-      animation: fadeIn 1s ease-in-out;
     }
 
     .hero h1 {
@@ -64,18 +51,12 @@
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
-      animation: fadeInUp 0.8s ease forwards;
     }
 
     h2 {
       margin-bottom: 20px;
       font-size: 2.5em;
-      color: var(--text-color);
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 20px;
+      color: #0a1f44;
     }
 
     .button {
@@ -84,15 +65,19 @@
       padding: 12px 25px;
       font-size: 1em;
       color: white;
-      background-color: var(--accent-color);
+      background-color: #0a1f44;
       text-decoration: none;
       border-radius: 5px;
       text-align: center;
-      transition: background-color 0.3s;
     }
 
     .button:hover {
       background-color: #082041;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
     .gallery {
@@ -107,11 +92,6 @@
       width: 280px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
     }
 
     .topic-tags {
@@ -121,81 +101,16 @@
     }
 
     .topic-tag {
-      background-color: var(--accent-color);
+      background-color: #0a1f44;
       color: #ffffff;
       padding: 10px 16px;
       border-radius: 30px;
       font-size: 1em;
     }
-
-    .testimonial {
-      background-color: #f4f4f4;
-      padding: 40px 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .testimonial p {
-      font-style: italic;
-    }
-
-    .testimonial strong {
-      display: block;
-      margin-top: 10px;
-    }
-
-    .social {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social a {
-      color: var(--accent-color);
-      font-size: 1.5em;
-      text-decoration: none;
-      transition: transform 0.2s;
-    }
-
-    .social a:hover {
-      transform: scale(1.2);
-    }
-
-    .dark-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--accent-color);
-      color: white;
-      padding: 10px 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 0.9em;
-      z-index: 999;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 
 <body>
-  <div class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</div>
-
   <div class="hero">
     <h1>Build Resilience. Live with Intention.</h1>
     <p>I help people navigate life transitions with resilience and clarity—through purpose, movement, and mindset.</p>
@@ -204,10 +119,15 @@
 
   <section id="journey">
     <h2>My Journey</h2>
-    <p>I'm passionate about inspiring others to live purpose-driven lives...</p>
-    <p>With over 12 years of experience...</p>
-    <p>...endurance races to exploring mountains as a way to reconnect with myself.</p>
-    <p>Now, I’m in Thailand, immersing myself in Muay Thai training...</p>
+    <p>
+      I’m passionate about inspiring others to live purpose-driven lives. I grew up in India before my family moved to the U.S. when I was a teenager, and ever since, my journey has been about adapting to new environments and embracing growth. With over 12 years of experience as an auditor across the U.S., Ireland, and Sweden, I’ve come to understand the realities and demands of high-pressure environments.
+    </p>
+    <p>
+      A decade ago, I found myself physically and mentally out of shape—disconnected from who I really was. That discomfort sparked a personal transformation. I began the process of getting back in touch with my values and started building a life that truly aligns with them. My path has taken me across continents—from moving to new countries and pushing myself in endurance races to exploring mountains as a way to reconnect with myself.
+    </p>
+    <p>
+      Now, I’m in Thailand, immersing myself in Muay Thai training—a continuation of my journey of self-discovery through movement, discipline, and intentional living.
+    </p>
     <div class="gallery">
       <img src="IMG_2787.JPEG" alt="Adventure Photo 1">
       <img src="IMG_8237.jpeg" alt="Adventure Photo 2">
@@ -215,9 +135,21 @@
   </section>
 
   <section id="caramelviking">
-    <h2>Why the name Caramel Viking?</h2>
-    <p>Caramel Viking represents the fusion of strength and sensitivity...</p>
-    <p>“Caramel” reflects my Indian roots...</p>
+    <h2>Why the Name Caramel Viking?</h2>
+    <p>
+      Caramel Viking represents the fusion of strength and sensitivity—a balance of fire and calm. The name was born unexpectedly while I was taking a cold plunge in Åre, Sweden, when someone shouted, “Caramel Viking!” and it stuck.
+    </p>
+    <p>
+      “Caramel” reflects my Indian roots, while “Viking” symbolizes the inner resilience I forged during my time in Sweden. It’s a unique blend of warmth and grit—about embracing life’s challenges with courage and determination while staying grounded in who you truly are.
+    </p>
+  </section>
+
+  <section id="coaching">
+    <h2>Coaching Services</h2>
+    <p><strong>Who it's for:</strong> High-performers, people in transition, or those feeling stuck.</p>
+    <p><strong>What you get:</strong> Clarity and resilience through focused conversations that challenge and support you.</p>
+    <p><strong>How it works:</strong> 1:1 coaching calls, 45 minutes each, over a period of 8–12 weeks.</p>
+    <a href="#contact" class="button">Book a 30 Minute Free Discovery Call</a>
   </section>
 
   <section id="topics">
@@ -229,35 +161,12 @@
     </div>
   </section>
 
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-      <p>“Sagar’s journey deeply resonated with me. His clarity, honesty, and grounded energy gave me the courage to face my own transitions.”</p>
-      <strong>— Clara M., Creative Director</strong>
-    </div>
-  </section>
-
-  <section id="calendly">
-    <h2>Book a Call</h2>
-    <p>Choose a time that works for you below.</p>
-    <div style="height:600px;">
-      <iframe src="https://calendly.com/YOUR-CALENDLY-USERNAME" width="100%" height="100%" frameborder="0"></iframe>
-    </div>
-  </section>
-
   <section id="contact">
     <h2>Let's Connect</h2>
     <p>If you're looking for a speaker, coach, or collaborator—I'd love to hear from you.</p>
     <a href="mailto:sdesai1012@gmail.com" class="button">Book a Discovery Call</a>
-    <div class="social">
-      <a href="https://instagram.com/caramel.viking" target="_blank">Instagram</a>
-    </div>
   </section>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 </body>
+
 </html>
+
