@@ -104,15 +104,16 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
       margin-top: 20px;
     }
 
     .gallery img {
       width: 100%;
-      max-width: 270px;
+      height: 250px;
+      object-fit: cover;
       border-radius: 10px;
     }
 
@@ -122,10 +123,16 @@
       border: none;
     }
 
+    .social-links {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
     .social-links a {
-      margin-right: 10px;
+      margin-left: 10px;
       font-size: 1.4em;
       color: #0a1f44;
+      vertical-align: middle;
     }
 
     .testimonials blockquote {
@@ -213,16 +220,21 @@
   <section id="contact">
     <h2>Let’s Connect</h2>
     <p>Email me: <a href="mailto:sdesai1012@gmail.com">sdesai1012@gmail.com</a></p>
-    <p>Follow me:</p>
-    <div class="social-links">
-      <a href="https://instagram.com/caramel.viking" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
+    <p style="display: flex; align-items: center; gap: 10px;">
+      Follow me:
+      <span class="social-links">
+        <a href="https://instagram.com/caramel.viking" target="_blank"><i class="fab fa-instagram"></i></a>
+      </span>
+    </p>
   </section>
 
-  <section id="booking">
-    <h2>Book a Discovery Call</h2>
-    <p>Pick a time below for your free 30-minute discovery call.</p>
+  <section id="booking" class="bg-light">
+    <h2 style="text-align: center;">Let’s Start the Conversation</h2>
+    <p style="text-align: center;">Pick a time below for your free 30-minute discovery call and let’s explore how I can support you.</p>
     <iframe src="https://calendly.com/sdesai1012/30min" frameborder="0"></iframe>
+    <p style="text-align: center; margin-top: 10px;">
+      <a class="cta-button" href="https://calendly.com/sdesai1012/30min" target="_blank">Open in Calendly</a>
+    </p>
   </section>
 </body>
 
